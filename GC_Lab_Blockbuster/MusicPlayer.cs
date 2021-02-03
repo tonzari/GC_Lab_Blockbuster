@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace GC_Lab_Blockbuster
 {
-    public enum Note
+    public enum Note // this is only notes in C maj / A min. Gotta add the rest ASAP
     {
         C2 = 65, D2 = 73, E2 = 82, F2 = 87, G2 = 98, A2 = 110, B2 = 123, 
         C3 = 131, D3 = 147, E3 = 165, F3 = 175, G3 = 196, A3 = 220, B3 = 247, 
@@ -20,7 +20,7 @@ namespace GC_Lab_Blockbuster
         // I've found that <= 1000 sounds unstable and loses its rythym
         // 1600 feels okay on my machine
 
-        // Eventually I'd like to build this out to looke like this:
+        // Eventually I'd like to build this out to look like this:
         // ConsoleBeepFun.PlaySound(Songs.SuperMarioTheme);
         // ConsoleBeepFun.PlaySound(Fx.Pause);
 
