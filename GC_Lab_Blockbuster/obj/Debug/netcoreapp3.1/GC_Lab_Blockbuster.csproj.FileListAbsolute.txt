@@ -1,0 +1,13 @@
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\bin\Debug\netcoreapp3.1\GC_Lab_Blockbuster.exe
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\bin\Debug\netcoreapp3.1\GC_Lab_Blockbuster.deps.json
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\bin\Debug\netcoreapp3.1\GC_Lab_Blockbuster.runtimeconfig.json
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\bin\Debug\netcoreapp3.1\GC_Lab_Blockbuster.runtimeconfig.dev.json
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\bin\Debug\netcoreapp3.1\GC_Lab_Blockbuster.dll
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\bin\Debug\netcoreapp3.1\GC_Lab_Blockbuster.pdb
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\obj\Debug\netcoreapp3.1\GC_Lab_Blockbuster.csprojAssemblyReference.cache
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\obj\Debug\netcoreapp3.1\GC_Lab_Blockbuster.AssemblyInfoInputs.cache
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\obj\Debug\netcoreapp3.1\GC_Lab_Blockbuster.AssemblyInfo.cs
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\obj\Debug\netcoreapp3.1\GC_Lab_Blockbuster.csproj.CoreCompileInputs.cache
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\obj\Debug\netcoreapp3.1\GC_Lab_Blockbuster.dll
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\obj\Debug\netcoreapp3.1\GC_Lab_Blockbuster.pdb
+C:\Users\dude_dude\source\repos\GC_Lab_Blockbuster\GC_Lab_Blockbuster\obj\Debug\netcoreapp3.1\GC_Lab_Blockbuster.genruntimeconfig.cache
