@@ -6,16 +6,11 @@ namespace GC_Lab_Blockbuster
 {
     public enum Genre
     {
+        Drama,
         Comedy,
         Horror,
         Romance,
-        Kids,
-        Action,
-        Arthouse,
-        Indie,
-        Adventure,
-        Propaganda,
-        Animation
+        Action
     }
     abstract class Movie
     {

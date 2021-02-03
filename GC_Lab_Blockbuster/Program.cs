@@ -8,6 +8,7 @@ namespace GC_Lab_Blockbuster
     {
         static void Main(string[] args)
         {
+            /*  
             PrintWelcomeMessage();
 
             do
@@ -15,7 +16,7 @@ namespace GC_Lab_Blockbuster
                 AccessBlockBusterCatalog();
             } while (userWantsToContinue);
 
-            ExitApp();
+            ExitApp();*/
         }
     }
 }
