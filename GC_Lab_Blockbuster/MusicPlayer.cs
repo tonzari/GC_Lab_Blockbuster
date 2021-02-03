@@ -14,11 +14,15 @@ namespace GC_Lab_Blockbuster
         C8 = 4186
     }
 
-    public static class Music
+    public static class MusicPlayer
     {
         // Change the tempo by editing the wholeNote value
-        // I've found that <= 1000 is unstable and loses its rythym
+        // I've found that <= 1000 sounds unstable and loses its rythym
         // 1600 feels okay on my machine
+
+        // Eventually I'd like to build this out to looke like this:
+        // ConsoleBeepFun.PlaySound(Songs.SuperMarioTheme);
+        // ConsoleBeepFun.PlaySound(Fx.Pause);
 
         public static int wholeNote = 1600;
         public static int halfNote = wholeNote / 2;
@@ -43,6 +47,7 @@ namespace GC_Lab_Blockbuster
         /// <summary>
         /// I found the super mario theme on reddit. I edited it A LOT. It had wrong notes and poor rhythm, and I refactored it to be easier to read, and made use of some primitive timing division variables.
         /// This song exists in my head since I memorized how to play it on the piano many years ago, so it was not too much trouble to fix, thankfully!
+        /// I plan to swap out the Console methods for my custom methods some other time.
         /// </summary>
         public static void PlaySuperMarioThemeSong()
         {

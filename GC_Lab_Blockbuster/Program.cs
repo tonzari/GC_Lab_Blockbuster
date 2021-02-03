@@ -8,29 +8,14 @@ namespace GC_Lab_Blockbuster
     {
         static void Main(string[] args)
         {
-            int freq;
-            Random rnd = new Random();
-/*
-            for (int i = 1; i < 10; i++)
+            PrintWelcomeMessage();
+
+            do
             {
-                //x = rnd.Next(200, 1800);
-                freq = 200 * (i * 2);
-                Console.Beep(freq, 70);
-                Console.WriteLine(i);
-            }
+                AccessBlockBusterCatalog();
+            } while (userWantsToContinue);
 
-            for (int i = 1; i < 10; i++)
-            {
-                //x = rnd.Next(200, 1800);
-                freq = 300 * (i * 2);
-                Console.Beep(freq, 100);
-                Console.WriteLine(i);
-            }*/
-
-            Music.PlaySuperMarioThemeSong();
-
+            ExitApp();
         }
-
-
     }
 }
