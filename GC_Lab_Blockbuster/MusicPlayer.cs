@@ -5,10 +5,10 @@ namespace GC_Lab_Blockbuster
 {
     public enum Note
     {
-        C2 = 65,  CS2 = 69,  D2 = 73,  DS2 = 78,  E2 = 82,  F2 = 87,  FS2 = 92,  G2 = 98,  GS2 = 104, A2 = 110, AS2 = 117, B2 = 123, 
-        C3 = 131, CS3 = 139, D3 = 147, DS3 = 156, E3 = 165, F3 = 175, FS3 = 185, G3 = 196, GS3 = 208, A3 = 220, AS3 = 233, B3 = 247, 
-        C4 = 262, CS4 = 262, D4 = 294, DS4 = 311, E4 = 330, F4 = 349, FS4 = 370, G4 = 392, GS4 = 415, A4 = 440, AS4 = 466, B4 = 494, 
-        C5 = 523, CS5 = 554, D5 = 587, DS5 = 622, E5 = 658, F5 = 698, FS5 = 740, G5 = 784, GS5 = 831, A5 = 880, AS5 = 932, B5 = 988, 
+        C2 = 65,   CS2 = 69,   D2 = 73,   DS2 = 78,   E2 = 82,   F2 = 87,   FS2 = 92,   G2 = 98,   GS2 = 104,  A2 = 110,  AS2 = 117,  B2 = 123, 
+        C3 = 131,  CS3 = 139,  D3 = 147,  DS3 = 156,  E3 = 165,  F3 = 175,  FS3 = 185,  G3 = 196,  GS3 = 208,  A3 = 220,  AS3 = 233,  B3 = 247, 
+        C4 = 262,  CS4 = 262,  D4 = 294,  DS4 = 311,  E4 = 330,  F4 = 349,  FS4 = 370,  G4 = 392,  GS4 = 415,  A4 = 440,  AS4 = 466,  B4 = 494, 
+        C5 = 523,  CS5 = 554,  D5 = 587,  DS5 = 622,  E5 = 658,  F5 = 698,  FS5 = 740,  G5 = 784,  GS5 = 831,  A5 = 880,  AS5 = 932,  B5 = 988, 
         C6 = 1047, CS6 = 1109, D6 = 1175, DS6 = 1245, E6 = 1319, F6 = 1397, FS6 = 1480, G6 = 1568, GS6 = 1661, A6 = 1760, AS6 = 1865, B6 = 1976, 
         C7 = 2093, CS7 = 2217, D7 = 2349, DS7 = 2489, E7 = 2637, F7 = 2794, FS7 = 2960, G7 = 3136, GS7 = 3322, A7 = 3520, AS7 = 3729, B7 = 3951, 
         C8 = 4186
@@ -29,8 +29,7 @@ namespace GC_Lab_Blockbuster
         public static int quarterNote = wholeNote / 4;
         public static int eighthNote = wholeNote / 8;
 
-
-        // These functions will be a tad more readable, musically speaking.
+        #region MUSIC METHODS
         public static void PlayNote(Note musicalNote, int duration)
         {
             int note = (int)musicalNote;
@@ -43,6 +42,9 @@ namespace GC_Lab_Blockbuster
             Thread.Sleep(duration);
         }
 
+        #endregion
+
+        #region SONGS
 
         /// <summary>
         /// I found the super mario theme on reddit. I edited it A LOT. It had wrong notes and poor rhythm, and I refactored it to be easier to read, and made use of some primitive timing division variables.
@@ -104,5 +106,7 @@ namespace GC_Lab_Blockbuster
         {
             Console.Beep(658, eighthNote); Console.Beep(1320, 500); Console.Beep(990, quarterNote); Console.Beep(1056, quarterNote); Console.Beep(1188, quarterNote); Console.Beep(1320, eighthNote); Console.Beep(1188, eighthNote); Console.Beep(1056, quarterNote); Console.Beep(990, quarterNote); Console.Beep(880, 500); Console.Beep(880, quarterNote); Console.Beep(1056, quarterNote); Console.Beep(1320, 500); Console.Beep(1188, quarterNote); Console.Beep(1056, quarterNote); Console.Beep(990, 750); Console.Beep(1056, quarterNote); Console.Beep(1188, 500); Console.Beep(1320, 500); Console.Beep(1056, 500); Console.Beep(880, 500); Console.Beep(880, 500); Thread.Sleep(quarterNote); Console.Beep(1188, 500); Console.Beep(1408, quarterNote); Console.Beep(1760, 500); Console.Beep(1584, quarterNote); Console.Beep(1408, quarterNote); Console.Beep(1320, 750); Console.Beep(1056, quarterNote); Console.Beep(1320, 500); Console.Beep(1188, quarterNote); Console.Beep(1056, quarterNote); Console.Beep(990, 500); Console.Beep(990, quarterNote); Console.Beep(1056, quarterNote); Console.Beep(1188, 500); Console.Beep(1320, 500); Console.Beep(1056, 500); Console.Beep(880, 500); Console.Beep(880, 500); Thread.Sleep(500); Console.Beep(1320, 500); Console.Beep(990, quarterNote); Console.Beep(1056, quarterNote); Console.Beep(1188, quarterNote); Console.Beep(1320, eighthNote); Console.Beep(1188, eighthNote); Console.Beep(1056, quarterNote); Console.Beep(990, quarterNote); Console.Beep(880, 500); Console.Beep(880, quarterNote); Console.Beep(1056, quarterNote); Console.Beep(1320, 500); Console.Beep(1188, quarterNote); Console.Beep(1056, quarterNote); Console.Beep(990, 750); Console.Beep(1056, quarterNote); Console.Beep(1188, 500); Console.Beep(1320, 500); Console.Beep(1056, 500); Console.Beep(880, 500); Console.Beep(880, 500); Thread.Sleep(quarterNote); Console.Beep(1188, 500); Console.Beep(1408, quarterNote); Console.Beep(1760, 500); Console.Beep(1584, quarterNote); Console.Beep(1408, quarterNote); Console.Beep(1320, 750); Console.Beep(1056, quarterNote); Console.Beep(1320, 500); Console.Beep(1188, quarterNote); Console.Beep(1056, quarterNote); Console.Beep(990, 500); Console.Beep(990, quarterNote); Console.Beep(1056, quarterNote); Console.Beep(1188, 500); Console.Beep(1320, 500); Console.Beep(1056, 500); Console.Beep(880, 500); Console.Beep(880, 500); Thread.Sleep(500); Console.Beep(660, 1000); Console.Beep(528, 1000); Console.Beep(594, 1000); Console.Beep(495, 1000); Console.Beep(528, 1000); Console.Beep(440, 1000); Console.Beep(419, 1000); Console.Beep(495, 1000); Console.Beep(660, 1000); Console.Beep(528, 1000); Console.Beep(594, 1000); Console.Beep(495, 1000); Console.Beep(528, 500); Console.Beep(660, 500); Console.Beep(880, 1000); Console.Beep(838, 2000); Console.Beep(660, 1000); Console.Beep(528, 1000); Console.Beep(594, 1000); Console.Beep(495, 1000); Console.Beep(528, 1000); Console.Beep(440, 1000); Console.Beep(419, 1000); Console.Beep(495, 1000); Console.Beep(660, 1000); Console.Beep(528, 1000); Console.Beep(594, 1000); Console.Beep(495, 1000); Console.Beep(528, 500); Console.Beep(660, 500); Console.Beep(880, 1000); Console.Beep(838, 2000);
         }
+
+        #endregion
     }
 }

@@ -16,25 +16,35 @@ namespace GC_Lab_Blockbuster
     {
         public string Title { get; set; }
         public int RunTime { get; set; }
-        public Genre Genre { get; set; }
-
+        public Genre Catergory { get; set; }
         public List<string> Scenes { get; set; }
 
-        public Movie(string Title, int RunTime, Genre Genre, List<string> Scenes)
+        public Movie(string Title, int RunTime, Genre Catergory, List<string> Scenes)
         {
             this.Title = Title;
             this.RunTime = RunTime;
-            this.Genre = Genre;
-
+            this.Catergory = Catergory;
             this.Scenes = Scenes;
         }
 
-        public override string ToString()
+        public virtual string PrintInfo()
         {
             string output = "";
             output += $"Title: {Title}\n";
             output += $"Run Time: {RunTime} Minutes\n";
-            output += $"Genre: {Genre}\n";
+            output += $"Genre: {Catergory}\n";
+            return output;
+        }
+
+        public string PrintScenes()
+        {
+            string output = "";
+
+            for (int i = 0; i < Scenes.Count; i++)
+            {
+                output += i + ". " + Scenes[i];
+            }
+
             return output;
         }
 

@@ -8,7 +8,7 @@ namespace GC_Lab_Blockbuster
     {
         static void Main(string[] args)
         {
-            /*  
+            
             PrintWelcomeMessage();
 
             do
@@ -16,7 +16,22 @@ namespace GC_Lab_Blockbuster
                 AccessBlockBusterCatalog();
             } while (userWantsToContinue);
 
-            ExitApp();*/
+            ExitApp();
         }
+
+        private static void PrintWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to Antonio's Blockbuster!");
+        }
+
+        private static void ExitApp()
+        {
+            Console.WriteLine("Thanks for visiting my dying little Blockbuster!");
+            Console.WriteLine("Exiting application...");
+            System.Environment.Exit(1);
+        }
+
     }
+
+
 }
