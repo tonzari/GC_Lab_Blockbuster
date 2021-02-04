@@ -28,17 +28,9 @@ namespace GC_Lab_Blockbuster
         {
             BlockBuster blockBuster = new BlockBuster();
 
-            blockBuster.PrintMovies();
-
-            availableOptions = blockBuster.Movies.Count;
-
-            Console.Write("Please select a movie you want to watch: ");
-
-            userNumber = GetAndValidateUserNumber();
-
-            Console.WriteLine(Environment.NewLine);
-
-            Console.WriteLine(blockBuster.Movies[userNumber - 1].ToString());
+            Movie currentMovie = blockBuster.CheckOut();
+         
+            Console.WriteLine(currentMovie.ToString());
 
             Console.WriteLine("");
 
@@ -48,8 +40,8 @@ namespace GC_Lab_Blockbuster
 
             if (userInput.Equals("y"))
             {
-                blockBuster.Movies[userNumber - 1].Play();
-                if (blockBuster.Movies[userNumber - 1].Title == "Super Mario Bros. The Movie")
+               currentMovie.Play();
+                if (currentMovie.Title == "Super Mario Bros. The Movie")
                 {
                     MusicPlayer.PlaySuperMarioThemeSong();
                 }
@@ -59,6 +51,10 @@ namespace GC_Lab_Blockbuster
                 return;
             }
 
+
+
+
+
             CheckUserWantsToContinue();
         }
 
@@ -67,28 +63,9 @@ namespace GC_Lab_Blockbuster
             Console.WriteLine("Welcome to Antonio's Blockbuster!");
         }
 
-        private static int GetAndValidateUserNumber()
-        {
-            // First checks if input is a number
-            // Then checks if the number is within the current max range
-            // The range updates each time a new menu is accessed. 
 
-            userInput = Console.ReadLine();
 
-            if (Int32.TryParse(userInput, out int result) && result >= 1 && result <= availableOptions)
-            {
-                return result;
-            }
-            else
-            {
-                Console.Write("Invalid input. Please Try again: ");
-                Console.WriteLine("");
-                return GetAndValidateUserNumber();
-            }
-
-        }
-
-        private static string GetAndValidateYesOrNo()
+        public static string GetAndValidateYesOrNo()
         {
             userInput = Console.ReadLine();
 

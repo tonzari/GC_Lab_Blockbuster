@@ -27,6 +27,7 @@ namespace GC_Lab_Blockbuster
 
             Console.WriteLine($"Scene: {userChoice}");
             Console.WriteLine(Scenes[userChoice]);
+
         }
     }
 }

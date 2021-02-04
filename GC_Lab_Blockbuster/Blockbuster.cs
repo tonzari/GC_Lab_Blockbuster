@@ -7,6 +7,9 @@ namespace GC_Lab_Blockbuster
     class BlockBuster
     {
         public List<Movie> Movies { get; set; }
+        public int userNumber;
+        public int availableOptions;
+        public string userInput;
 
         public BlockBuster()
         {
@@ -49,6 +52,43 @@ namespace GC_Lab_Blockbuster
         public Movie GetMovie(int index)
         {
             return Movies[index];
+        }
+
+        public Movie CheckOut()
+        {
+            PrintMovies();
+
+            availableOptions = Movies.Count;
+
+            Console.Write("Please select a movie you want to watch: ");
+
+            userNumber = GetAndValidateUserNumber();
+
+            Console.WriteLine(Environment.NewLine);
+
+            return Movies[userNumber - 1];
+
+        }
+
+        public int GetAndValidateUserNumber()
+        {
+            // First checks if input is a number
+            // Then checks if the number is within the current max range
+            // The range updates each time a new menu is accessed. 
+
+            userInput = Console.ReadLine();
+
+            if (Int32.TryParse(userInput, out int result) && result >= 1 && result <= availableOptions)
+            {
+                return result;
+            }
+            else
+            {
+                Console.Write("Invalid input. Please Try again: ");
+                Console.WriteLine("");
+                return GetAndValidateUserNumber();
+            }
+
         }
     }
 }
