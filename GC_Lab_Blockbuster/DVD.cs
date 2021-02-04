@@ -6,9 +6,12 @@ namespace GC_Lab_Blockbuster
 {
     class DVD : Movie
     {
-        public DVD(string Title, int RunTime, Genre Genre, List<string> Scenes) : base(Title, RunTime, Genre, Scenes)
+        public DVD(string Title, int RunTime, Genre Catergory, List<string> Scenes) : base(Title, RunTime, Catergory, Scenes)
         {
-
+            this.Title = Title;
+            this.RunTime = RunTime;
+            this.Catergory = Catergory;
+            this.Scenes = Scenes;
         }
 
         public override void Play()
@@ -16,7 +19,7 @@ namespace GC_Lab_Blockbuster
             Console.WriteLine("Now Playing: " + Title);
             Console.WriteLine("Select a scene to watch: ");
 
-            PrintScenes();
+            Console.WriteLine(PrintScenes());
 
             string userInput = Console.ReadLine();
 

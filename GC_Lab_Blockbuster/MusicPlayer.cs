@@ -55,9 +55,9 @@ namespace GC_Lab_Blockbuster
         {
             Intro();
             PhraseA();
-            PhraseA();
+            //PhraseA();
             PhraseBa();
-            PhraseBb();
+           // PhraseBb();
 
             static void Intro()
             {

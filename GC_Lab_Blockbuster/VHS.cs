@@ -20,7 +20,12 @@ namespace GC_Lab_Blockbuster
 
         public override void Play()
         {
-            Console.WriteLine(Scenes[currentTime]);
+
+            while (currentTime < Scenes.Count)
+            {
+                Console.WriteLine(Scenes[currentTime]);
+                currentTime++;
+            }
         }
 
         public void Rewind()

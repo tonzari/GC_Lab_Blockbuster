@@ -42,7 +42,7 @@ namespace GC_Lab_Blockbuster
 
             for (int i = 0; i < Scenes.Count; i++)
             {
-                output += i + ". " + Scenes[i];
+                output += i + ". " + Scenes[i] + "\n";
             }
 
             return output;
