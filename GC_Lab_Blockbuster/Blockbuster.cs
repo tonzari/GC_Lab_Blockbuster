@@ -24,13 +24,8 @@ namespace GC_Lab_Blockbuster
 
         public void DisplayMovies()
         {
-            //Print all our movies
             foreach (Movie m in Movies)
             {
-                //Console write line may only take in a string 
-                //But all objects may be convert into a string 
-                //ToString gets called automatically any time I try 
-                //to try and treat something as a string 
                 Console.WriteLine(m);
             }
         }

@@ -27,7 +27,7 @@ namespace GC_Lab_Blockbuster
             this.Scenes = Scenes;
         }
 
-        public virtual string PrintInfo()
+        public override string ToString()
         {
             string output = "";
             output += $"Title: {Title}\n";
